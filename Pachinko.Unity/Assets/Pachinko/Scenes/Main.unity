@@ -822,6 +822,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8799318239413630643, guid: 332c8bd2a4204ae4994895d00dc94111, type: 3}
   m_PrefabInstance: {fileID: 798995030}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &807321864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807321867}
+  - component: {fileID: 807321866}
+  - component: {fileID: 807321865}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &807321865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807321864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &807321866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807321864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &807321867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807321864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &828297644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1994517225370811312, guid: 0da80737cb6367a40b542b3cb942f71d, type: 3}
@@ -1175,7 +1243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1492977134
 Transform:
   m_ObjectHideFlags: 0
@@ -1825,7 +1893,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 922328627691381949, guid: 93af2e4951705fb42a9f151a2318ff0d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 922328627691381950, guid: 93af2e4951705fb42a9f151a2318ff0d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5694642
+      objectReference: {fileID: 0}
+    - target: {fileID: 922328627691381950, guid: 93af2e4951705fb42a9f151a2318ff0d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5694642
+      objectReference: {fileID: 0}
+    - target: {fileID: 922328627691381950, guid: 93af2e4951705fb42a9f151a2318ff0d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6320754
       objectReference: {fileID: 0}
     - target: {fileID: 922328627691381951, guid: 93af2e4951705fb42a9f151a2318ff0d, type: 3}
       propertyPath: m_RootOrder

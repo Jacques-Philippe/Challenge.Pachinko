@@ -101,7 +101,6 @@ namespace Assets.Pachinko.Scripts
 
         private void Walk()
         {
-            Debug.Log("Walking!");
             Vector2 movement = this.currentDirection.normalized * this.Speed * Time.deltaTime;
             this.transform.position += new Vector3(movement.x, movement.y, 0.0f);
         }
@@ -109,6 +108,12 @@ namespace Assets.Pachinko.Scripts
         private void Start()
         {
             this.source = this.GetComponent<AudioSource>();
+            StartCoroutine("Whistle");
+        }
+
+        public void Reset()
+        {
+            currentState = COMMONER_STATE.WHISTLING;
             StartCoroutine("Whistle");
         }
 
