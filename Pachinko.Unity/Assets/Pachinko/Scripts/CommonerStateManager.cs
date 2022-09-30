@@ -62,7 +62,9 @@ namespace Assets.Pachinko.Scripts
                     source.Stop();
                 }
                 StartCoroutine("Grumble");
+                
             }
+            this.currentState = nextState;
         }
 
         public void TurnAround()
@@ -99,6 +101,7 @@ namespace Assets.Pachinko.Scripts
 
         private void Walk()
         {
+            Debug.Log("Walking!");
             Vector2 movement = this.currentDirection.normalized * this.Speed * Time.deltaTime;
             this.transform.position += new Vector3(movement.x, movement.y, 0.0f);
         }
